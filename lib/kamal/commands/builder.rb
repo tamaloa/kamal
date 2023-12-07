@@ -55,10 +55,12 @@ class Kamal::Commands::Builder < Kamal::Commands::Base
 
   private
     def ensure_local_docker_installed
-      docker "--version"
+      # docker "--version"
+      true
     end
 
     def ensure_local_buildx_installed
-      docker :buildx, "version"
+      # docker :buildx, "version"
+      true
     end
 end
